@@ -40,16 +40,23 @@
   </main>
 
 
-  <div class="poll-wrap">
+  <div class="poll-wrap" style="height: 500px;">
 
     <div class="container">
+      <div class="progress">
+        <div class="determinate" style="width: 0%"></div>
+      </div>
       <section class="section poll-item">
         <div class="poll-item-content">
           <h3 for="">The Questions 1</h3>
           <blockquote class="quest-txt flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             voluptatibus at numquam?
           </blockquote>
+          <p class="range-field">
+            <input type="range" id="test5" min="0" max="100" />
+          </p>
           <input placeholder="Answer" type="text" class="poll-input">
+
           <button class="btn-large poll btn">Next!</button>
         </div>
       </section>
@@ -59,7 +66,33 @@
           <blockquote class="quest-txt flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             voluptatibus at numquam?
           </blockquote>
-          <input placeholder="Answer" type="text" class="poll-input">
+          <div class="poll-vars">
+            <p>
+              <label>
+                <input class="with-gap" name="group1" type="radio" checked />
+                <span>Red</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Yellow</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Green</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Brown</span>
+              </label>
+            </p>
+          </div>
+
           <button class="btn-large poll btn">Next!</button>
         </div>
       </section>
@@ -70,6 +103,10 @@
             voluptatibus at numquam?
           </blockquote>
           <input placeholder="Answer" type="text" class="poll-input">
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          <input placeholder="Answer" type="text" class="poll-input">
+
           <button class="btn-large poll btn">Next!</button>
         </div>
       </section>
@@ -88,7 +125,8 @@
           <h3 for="">Congratulations!</h3>
           <blockquote class="quest-txt flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit!!
           </blockquote>
-          <p>Lorem on ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde adipisci id dolore ipsa quasi maiores, placeat accusamus, eius quae, et minus.</p>
+          <p>Lorem on ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde adipisci id dolore ipsa quasi
+            maiores, placeat accusamus, eius quae, et minus.</p>
         </div>
       </section>
 
@@ -123,12 +161,11 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2014 Copyright Text
+        © 2019 Copyright Text
         <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
       </div>
     </div>
   </footer>
-
 
 
   <script src="js/common.js"></script>
