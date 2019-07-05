@@ -11,7 +11,6 @@ let pollLogic = {
           self.mainScreen.style.display = 'none';
           self.getNextSection(i)
       })
-
     })
   },
   showPollSections () {
@@ -19,13 +18,9 @@ let pollLogic = {
       item.style.display = 'none'
     })
   },
-
   getNextSection (i) {
     this.showPollSections()
     this.pollSect[i].style.display = 'block'
   }
-
-
 }
-
 pollLogic.init()
